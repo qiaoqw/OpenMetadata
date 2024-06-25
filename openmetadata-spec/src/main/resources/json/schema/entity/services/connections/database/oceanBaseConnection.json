@@ -1,5 +1,5 @@
 {
-  "$id": "https://open-metadata.org/schema/entity/services/connections/database/mysqlConnection.json",
+  "$id": "https://github.com/qiaoqw/OpenMetadata/blob/main/openmetadata-spec/src/main/resources/json/schema/entity/services/connections/database/oceanBaseConnection.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "OceanBaseConnection",
   "description": "OceanBase Database Connection Config",
@@ -47,18 +47,12 @@
       "oneOf": [
         {
           "$ref": "./common/basicAuth.json"
-        },
-        {
-          "$ref": "./common/iamAuthConfig.json"
-        },
-        {
-          "$ref": "./common/azureConfig.json"
         }
       ]
     },
     "hostPort": {
       "title": "Host and Port",
-      "description": "Host and port of the MySQL service.",
+      "description": "Host and port of the OceanBase service.",
       "type": "string"
     },
     "databaseName": {
