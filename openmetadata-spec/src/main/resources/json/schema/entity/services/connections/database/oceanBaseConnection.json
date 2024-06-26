@@ -41,14 +41,11 @@
       "description": "Username to connect to MySQL. This user should have privileges to read all the metadata in Mysql.",
       "type": "string"
     },
-    "authType": {
-      "title": "Auth Configuration Type",
-      "description": "Choose Auth Config Type.",
-      "oneOf": [
-        {
-          "$ref": "./common/basicAuth.json"
-        }
-      ]
+    "password": {
+      "title": "Password",
+      "description": "Password to connect to Doris.",
+      "type": "string",
+      "format": "password"
     },
     "hostPort": {
       "title": "Host and Port",
